@@ -1,0 +1,338 @@
+/*SETEO VALORES DEL BODY*/
+
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Lato', sans-serif;
+	font-family: 'Montserrat', sans-serif;
+}
+
+/*INICIO DEL HEADER DE TODAS LAS PAGINAS*/
+
+.navbar {
+	height: 95px;
+}
+.barra-navegacion {
+	background-color:$colorPrincipal;
+}
+.navbar-brand {
+	color:$colorTerciario;
+	font-size: 28px;
+}
+.navbar-nav {
+	a {
+		color:$colorTerciario;
+		font-size: 28px;
+		margin-left: 3rem;
+		&:hover {
+			display: flex;
+			align-items: center;
+			justify-content: end;
+			color:$colorSecundario;
+
+		}
+	}
+}
+
+/*FIN DEL HEADER*/
+
+/*INCIO SECCION HOLA INDEX*/
+
+
+.col-lg-12 {
+	background-color:$colorPrincipal;
+}
+
+.hola{
+	color:$colorSecundario;
+  margin-top: 100px; 
+  font-size: 45px;
+	font: bold;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+	animation: abcd 10s infinite;
+}
+
+@keyframes abcd {
+	0% {
+		margin-left: 30px;
+	}
+	10% {
+		margin-left: 15px;
+	}
+	20% {
+		margin-left: 30px;
+	}
+	30% {
+		margin-right: 15px;
+	}
+	40% {
+        margin-right: 30px;
+	}
+	50% {
+		margin-left: 15px;
+	}
+	60% {
+		margin-left: 30px;
+	}
+	70% {
+		margin-right: 15px;
+	}
+	80% {
+		margin-right: 30px;
+	}
+	90% {
+		margin-left: 15px;
+	}
+	100% {
+		margin-left: 30px;
+	}
+}
+.nombre {
+	color:$colorTerciario;
+	font-size: 35px;
+	margin: 30px;
+}
+
+
+.conoce-mas {
+	@extend %conoce;
+}
+
+/*FIN DE LA SECCION HOLA DEL INDEX*/
+
+/*INCIO DE LAS SECCIONES ACERCA Y METODO DEL INDEX*/
+
+.col-lg-6 {
+	background-color:$colorPrincipal;
+	height: 350px;
+	@include caja-flex(flex, center, center);
+	a {
+		color:$colorSecundario;
+		font-size: 35px;
+		text-decoration: none;
+		&:hover {
+			color:$colorSecundario;
+			transition: 0.5s;
+			text-shadow: 0 0 3px #f78ac9, 0 0 15px #f78ac9, 0 0 45px #f78ac9;
+		}
+	}
+}
+
+/*FIN DE LAS SECCIONES ACERCA Y METODO DEL INDEX*/
+
+/*INICIO FOOTER*/
+
+.col-lg-12 {
+	background-color:$colorPrincipal;
+	@include caja-flex(flex, center, center);
+	flex-direction: column;
+	
+}
+.copyright {
+	font-size: 15px;
+	color:$colorSecundario;
+	margin-bottom: 18px;
+}
+.iconos {
+	i {
+		color:$colorTerciario;
+		font-size: 65px;
+		line-height: 65px;
+		padding: 1.5rem;
+	}
+}
+/*FIN FOOTER*/
+
+/*INICIO FOTO CRISTINA DEL INDEX*/
+.foto-index {
+	background-size: cover;
+	margin: 0 14rem;
+	clip-path: ellipse();
+	max-width:58rem;
+	max-height:58rem;
+}
+
+/*FIN FOTO CRISTINA DEL INDEX*/
+/*INICIO GRID PAGINA ACERCA*/
+
+.col-md-7 {
+	background-color:$colorPrincipal;
+	@include caja-flex(flex, center, center);
+	flex-direction: column;
+}
+
+.presentacion-acerca {
+	color:$colorTerciario;
+	font-size: 25px;
+	font: bold;
+	line-height: 80px;
+	margin: 30px;
+}
+.conoce-mas-acerca {
+	@extend %conoce;
+}
+.col-md-5 {
+	background-color:$colorPrincipal;
+}
+.foto-acerca {
+	background-size:cover;
+	margin-top: 30px;
+	margin-right: 5px;
+	width: 85%;
+	height: auto;
+	clip-path: circle();
+	@include caja-flex(flex, center, center);
+}
+/*FIN GRID PAGINA ACERCA*/
+
+/*DEFINO EL GRID PAGINA METODO*/
+
+.col-md-12 {
+	background-color:$colorPrincipal;
+	@include caja-flex(flex, center, center);
+	flex-direction: column;
+	height: 100%;
+}
+.rabine {
+	margin-top: 100px;
+	color:$colorSecundario;
+	font-size: 45px;
+	font: bold;
+	font-weight: 200;
+	letter-spacing: 0.5px;
+	@include caja-flex(flex, center, center);
+}
+.metodo-cuerpo {
+	color:$colorTerciario;
+	font-size: 25px;
+	font: bold;
+	line-height: 80px;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+.contactame-metodo {
+	background-color:$colorPrincipal;
+	display: flex;
+	align-items: center;
+	justify-content: right;
+	a {
+		font-size: 15px;
+		color:$colorTerciario;
+		text-decoration: none;
+		font: bold;
+		&:hover {
+			color:$colorSecundario;
+			transition: 0.5s;
+			text-shadow: 0 0 7px rgb(253, 99, 207), 0 0 30px rgb(253, 99, 207), 0 0 80px rgb(253, 99, 207);
+		}
+	}
+}
+/*FIN PAGINA METODO*/
+
+/*DEFINO EL GRID DE LA PAGINA MEDIA*/
+.imagenes {
+	margin-top: 100px;
+	color:$colorSecundario;
+	font-size: 45px;
+	font: bold;
+	font-weight: 200;
+	letter-spacing: 0.5px;
+	@include caja-flex(flex, center, center);
+}
+.galeria-imagenes {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-left: 6rem;
+	margin-bottom: 4rem;
+}
+/*FIN LA PAGINA MEDIA*/
+
+/*DEFINO LOS VALORES PARA LA PAGINA CONTACTO*/
+
+
+.pagina-contacto {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-left: 6rem;
+	margin-bottom: 5rem;
+	flex-direction: column;
+	min-height: 70vh;
+}
+.head-contacto {
+	margin-top: 100px;
+	color:$colorSecundario;
+	font-size: 45px;
+	font: bold;
+	font-weight: 200;
+	letter-spacing: 0.5px;
+}
+.ubicacion {
+	font-size: 25px;
+	color:$colorSecundario;
+	margin-bottom: 18px;
+}
+.horario {
+	font-size: 25px;
+	color:$colorTerciario;
+	margin-bottom: 18px;
+}
+.formulario-contacto {
+	@include caja-flex(flex, center, center);
+	flex-direction: column;
+	color: #fff;
+	font-size: 25px;
+}
+.text-box {
+	background:rgb(48, 1, 75);
+	color:$colorSecundario;
+	border: none;
+	height: 50px;
+	padding: 12px;
+	font-size: 25px;
+	border-radius: 5px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+	margin-bottom: 20px;
+	opacity: 0.9;
+}
+.text-message {
+	background:rgb(48, 1, 75);
+	color:$colorSecundario;
+	border: none;
+	width: 100%;
+	padding: 12px;
+	font-size: 25px;
+	border-radius: 5px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+	margin-bottom: 20px;
+	opacity: 0.9;
+	max-height: 400px;
+}
+
+.send-btn {
+	float: right;
+	background:rgb(48, 1, 75);
+	color:$colorSecundario;
+	border: none;
+	width: 120px;
+	height: 40px;
+	font-size: 20px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	border-radius: 5px;
+	transition: 0.5s;
+	transition-property: background;
+	cursor: pointer;
+	&:hover {
+		background: #dc89f5;
+		box-shadow: 0 0 5px #dc89f5, 0 0 20px #dc89f5, 0 0 60px #dc89f5;
+	}
+}
+/*FIN DE LA PAGINA CONTACTO*/
+
+
+
